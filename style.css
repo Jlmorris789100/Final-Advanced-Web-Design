@@ -1,6 +1,221 @@
-.container {
-height: 100%;
-width: 100%;
+ @media only screen and (max-width: 600px) {
+.mobilenav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 82px;
+  width: 100%;
+  background-color: #000000;
+  margin-left: -10px;
+  padding-right: 18px;
+  margin-top: -10px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.border {
+  margin-top: -38px;
+  width: 100%;
+  height: 80px;
+}
+.sidepanel {
+  height: 100%; /* Specify a height */
+  width: 50%; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #000000; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 0px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+}
+.sidepanel a {
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-bottom: 40px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+.sidepanel a:hover {
+  color: #FFC933;
+}
+.sidepanel a:active {
+  color: #FFC933;
+}
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.openbtn {
+  font-size: 40px;
+  cursor: pointer;
+  background-color: #000000;
+  color: white;
+  border: none;
+}
+.openbtn:active {
+  color: #FFC933;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+.service {
+  display: none;
+}
+.nav-logo {
+  display: none;
+}
+.nav {
+  display: none;
+}
+ul {
+ display: none;
+
+}
+li {
+  display: none;
+}
+.logo {
+  display: flex;
+  align-content: right;
+}
+.ButlersPlumbingText {
+display: none;
+}
+.LLCText {
+display: none;
+}
+.header {
+display: none;
+}
+.mobileheader {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.mobiletitle {
+display: flex;
+flex-direction: row;
+align-content: center;
+justify-content: center;
+}
+.mobileheadertext {
+  color: black;
+  font-size: 33px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+}
+.mobileLLCtext {
+  color: black;
+  font-size: 18px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+.mobilecenter {
+  color: black;
+  font-style: normal;
+  font-size:  19px;
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+}
+.mobileimage {
+  width: 100%;
+  height: 100%;
+}
+.header {
+display: none;
+}
+.values {
+display: none;
+}
+.wrong {
+display: none;
+}
+.top-left {
+display: none;
+}
+.footercontainer {
+  display: none;
+}
+.twobuttons {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  margin-top: -370px;
+}
+.button {
+  background-color: black;
+  border-color: black;
+  border-radius: 15px;
+  border-width: 3px;
+  color: white;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  display: inline-block;
+  font-size: 19px;
+  cursor: pointer;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  align-content: center;
+}
+.button:hover {
+  background-color: #FFC533; 
+  color: white;
+  border-color: #FFC533;
+}
+}
+
+
+@media only screen and (min-width: 600px) {
+.sidepanel {
+  display: none;
+}
+.sidepanel a{
+  display: none;
+}
+.sidepanel a:hover {
+  display: none;
+}
+.sidepanel .closebtn {
+  display: none;
+}
+.openbtn {
+  display: none;
+}
+.openbtn:hover {
+  display: none;
+}
+#main {
+  display: none;
+}
+.nav-logo {
+  display: flex;
+  flex-direction: row;
+  row-gap: 10px;
 }
 .nav-container {
   display: flex;
@@ -167,7 +382,7 @@ p.lefttext {
   font-style: normal;
   align-content: center;
 }
-.footer-container {
+.footercontainer {
 width: 100%;
 margin-top: 50px;
 border-top: 5px solid black;
@@ -236,3 +451,8 @@ padding-right: 45px;
   color: white;
   border-color: #FFC533;
 }
+}
+
+
+
+
