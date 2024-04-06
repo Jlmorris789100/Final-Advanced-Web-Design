@@ -154,14 +154,14 @@ display: none;
 .footercontainer {
   display: none;
 }
-.twobuttons {
+.mobiletwobuttons {
   display: flex;
   flex-direction: column;
   text-align: center;
   position: relative;
   margin-top: -370px;
 }
-.button {
+.mobilebutton {
   background-color: black;
   border-color: black;
   border-radius: 15px;
@@ -182,7 +182,7 @@ display: none;
   font-style: normal;
   align-content: center;
 }
-.button:hover {
+.mobilebutton:hover {
   background-color: #FFC533; 
   color: white;
   border-color: #FFC533;
@@ -191,31 +191,23 @@ display: none;
 
 
 @media only screen and (min-width: 600px) {
-.sidepanel {
+.mobilenav {
   display: none;
 }
-.sidepanel a{
+.border {
   display: none;
 }
-.sidepanel a:hover {
+.mobileheader {
   display: none;
 }
-.sidepanel .closebtn {
+.mobilecenter {
   display: none;
 }
-.openbtn {
+.mobileimage {
   display: none;
 }
-.openbtn:hover {
+.mobiletwobuttons {
   display: none;
-}
-#main {
-  display: none;
-}
-.nav-logo {
-  display: flex;
-  flex-direction: row;
-  row-gap: 10px;
 }
 .nav-container {
   display: flex;
@@ -236,6 +228,7 @@ display: none;
   display: flex;
   flex-direction: row;
   row-gap: 10px;
+  justify-content: left;
 }
 .logo {
   margin-left: 30px;
