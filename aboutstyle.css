@@ -1,5 +1,5 @@
  @media only screen and (max-width: 600px) {
-.mobilenav {
+  .mobilenav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -64,7 +64,6 @@
 .openbtn:active {
   color: #FFC933;
 }
-
 #main {
   transition: margin-left .5s;
   padding: 16px;
@@ -86,8 +85,8 @@ li {
   display: none;
 }
 .logo {
-display: flex;
-align-content: right;
+  display: flex;
+  align-content: right;
 }
 .butlersplumbingtext {
 display: none;
@@ -95,103 +94,125 @@ display: none;
 .llcText {
 display: none;
 }
-.header {
-display: none;
+.container {
+height: 100%;
+width: 100%;
 }
-.mobileheader {
-  display: flex;
-  align-content: center;
-  flex-direction: column;
-  margin-top: 50px;
-}
-.mobiletitle {
-display: flex;
-flex-direction: row;
-align-content: center;
-justify-content: center;
-}
-.mobileheadertext {
-  color: black;
-  font-size: 33px;
-  font-family: "Fira Sans", sans-serif;
-  font-weight: 700;
-}
-.mobilellctext {
-  color: black;
-  font-size: 18px;
-  font-family: "Fira Sans", sans-serif;
-  font-weight: 700;
-  margin-top: 10px;
-  margin-left: 5px;
-}
-.mobilecenter {
-  color: black;
-  font-style: normal;
-  font-size:  19px;
-  font-family: "Cardo", serif;
-  font-weight: 400;
-  text-align: center;
+.top {
   width: 100%;
   height: 100%;
-  margin-top: 20px;
 }
-.mobilewaterimage {
+.nameandimage {
   width: 100%;
-  height: 500px;
+  display: inline-flex;
+  flex-direction: column-reverse;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  color: black;
 }
-.header {
+.joeimage {
+  margin-top: 10px;
+  width: 400px;
+  height: 300px;
+ margin-left: 25px;
+}
+.mobilemiddle {
+  position: absolute;
+  top: 119%;
+  color: white;
+  font-size:  17px;
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.mobileheader {
+  font-size: 33px;
+  color: #38A7A7;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+p.mobilestart {
+  color: white;
+  text-align: center;
+  font-size:  17px;
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-left: 25px;
+  padding-right: 25px;
+  line-height: 30px;
+}
+h2 {
+   font-size: 28px;
+   text-align: center;
+   font-family: "Fira Sans", sans-serif;
+   font-weight: 700;
+   font-style: normal;
+   margin-bottom: 15px;
+}
+p.mobile {
+text-align: center;
+font-size:  17px;
+font-family: "Cardo", serif;
+font-weight: 400;
+font-style: normal;
+line-height: 30px;
+color: black;
+padding-left: 25px;
+padding-right: 25px;
+}
+p.bio {
+  display: none;
+}
+.middle {
+ display: none;
+}
+.blacksection {
+  width: 100%;
+  height: 660px;
+  position: relative;
+  margin-top: -140px;
+}
+.centered {
 display: none;
 }
-.values {
-display: none;
-}
-.wrong {
-display: none;
-}
-.top-left {
+.bottom {
 display: none;
 }
 .footercontainer {
-  display: none;
+display: none;
 }
-.mobiletwobuttons {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  position: relative;
-  margin-top: -370px;
+.mobilefoot {
+ width: 100%;
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-content: center;
+ height: 100%;
+ margin-top: -150px;
 }
-.mobilebutton {
-  background-color: black;
-  border-color: black;
-  border-radius: 15px;
-  border-width: 3px;
-  color: white;
-  margin-bottom: 25px;
-  margin-top: 25px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  text-align: center;
-  display: inline-block;
-  font-size: 19px;
-  cursor: pointer;
-  font-family: "Fira Sans", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  align-content: center;
+.footertext {
+text-align: left;
+font-size:  17px;
+font-family: "Cardo", serif;
+font-weight: 400;
+font-style: normal;
+line-height: 30px;
+color: black;
+padding-left: 20px;
 }
-.mobilebutton:hover {
-  background-color: #FFC533; 
-  color: white;
-  border-color: #FFC533;
+.facebookmobile {
+  width: 80px;
+  height: 80px;
 }
 }
 
-
-@media only screen and (min-width: 600px) {
-.mobilenav {
+ @media only screen and (min-width: 600px) {
+  .mobilenav {
   display: none;
 }
 .border {
@@ -267,112 +288,137 @@ li a {
 li a:hover {
   color: #FFC533;
 }
-.header {
-  position: relative;
-  margin-left: -10px;
-  margin-top: -3px;
-  margin-right: -8px;
-  height: 500px;
+.container {
+height: 100%;
+width: 100%;
 }
-.waterimage {
-  opacity: 0.7;
+.top {
+  width: 100%;
+  height: 400px;
+  margin-top: 50px;
 }
-.top-left {
-  position: absolute;
-  top: 150px;
-  left: 25px;
-  font-size: 33px;
-  color: black;
-  font-family: "Fira Sans", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+.nameandimage {
+  width: 100%;
+  display: inline-flex;
+  align-content: center;
+ display-direction: row;
+  justify-content: center;
 }
-.service {
-  margin-top: -130px;
-  padding-left: 100px;
-  padding-right: 100px;
+.joeimage {
+  padding-left: 120px;
+  margin-top: 40px;
+  width: 1000px;
+  height: 400px;
 }
 h2 {
    font-size: 33px;
-   text-align: center;
+   text-align: left;
    font-family: "Fira Sans", sans-serif;
    font-weight: 700;
    font-style: normal;
    margin-bottom: 15px;
-   margin-top: 20px;
 }
-.text {
+.nametext {
   width: 100%;
   height: 100px;
-  text-align: center;
-  display: flex;
+  padding-right: 150px;
   justify-content: center;
-  font-size:  19px;
-  font-family: "Cardo", serif;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 30px;
-  padding-bottom: 20px;
+  margin-top: 0px;
+  padding-left: 30px;
+  margin-top: 50px ;
 }
-.threeservices {
- width: 100%;
- display: flex;
- justify-content: space-around;
- margin-top: -30px;
+p.mobile {
+  display: none;
 }
-.serviceimage {
-  margin: 30px;
-  margin-bottom: -5px;
+p.bio {
+text-align: left;
+font-size:  19px;
+font-family: "Cardo", serif;
+font-weight: 400;
+font-style: normal;
+line-height: 30px;
 }
-.bottom-left {
-  font-size:  19px;
-  font-family: "Cardo", serif;
-  font-weight: 700;
-  font-style: normal;
-  color: white;
-  margin-top: -65px;
-  margin-left: 18px;
-  diplasy: flex;
-  justify-conter: center;
-}
-.values {
+.middle {
   width: 100%;
-  font-family: "Fira Sans", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  margin-top: 100px;
-  margin-bottom: 40px;
+  height: 100%;
 }
-.fouricons {
- width: 100%;
- display: flex;
- justify-content: space-evenly;
- text-align: center;
+.blacksection {
+  width: 100%;
+  margin-top: -150px;
+  position: relative;
 }
-p.icontext {
-  font-size: 24px;
-  font-family: "Fira Sans", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-.wrong {
-  padding-left: 100px;
-  padding-right: 100px;
-  margin-bottom: -20px;
-}
-.issue {
+h2.Experience{
   display: flex;
+  width: 100%;
+  text-align: center;
   justify-content: center;
-  align-content: center;
+  font-size: 33px;
+  color: #339494;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
-p.lefttext {
-  font-size: 19px;
-  padding-left: 100px;
-  padding-right: 100px;
+.centered {
+  position: absolute;
+  top: 114%;
+  padding-left: 150px;
+  padding-right: 150px;
+  color: white;
+  text-align: left;
+  font-size:  19px;
   font-family: "Cardo", serif;
   font-weight: 400;
   font-style: normal;
-  align-content: center;
+}
+.bottom {
+margin-top: -300px;
+}
+h2.bottomh2 {
+padding-left: 150px;
+font-size: 33px;
+font-family: "Fira Sans", sans-serif;
+font-weight: 700;
+}
+.startedimageandtext {
+display: flex;
+display-dorection: row;
+align-items: center;
+justify-content: center;
+width: 100%;
+}
+.startedtext {
+padding-left: 150px;
+font-size:  19px;
+font-family: "Cardo", serif;
+font-weight: 400;
+margin-top: -25px;
+}
+.startedimage {
+padding-right: 150px;
+margin-top: -70px;
+}
+.lasttext {
+padding-left: 150px;
+padding-right: 150px;
+font-size:  19px;
+font-family: "Cardo", serif;
+font-weight: 400;
+margin-bottom: 50px;
+}
+.bluetext {
+background-color: #339494;
+border-radius: 30px;
+color: black;
+font-size:  19px;
+font-family: "Cardo", serif;
+font-weight: 400;
+height: 80px;
+text-align: center;
+align-content: center;
+padding-left: 15px;
+padding-right: 15px;
+margin: auto;
+width: 50%;
 }
 .footercontainer {
 width: 100%;
@@ -391,22 +437,21 @@ margin-bottom: 30px;
 .contacttext {
 font-size: 19px;
 line-height: 40px;
-text-align: left;
-margin-top: -40px;
+ text-align: left;
 font-family: "Cardo", serif;
 font-weight: 400;
 font-style: normal;
 }
 .facebookimage {
-margin-bottom: -15px;
-width: 40px;
-height: 40px;
+  margin-bottom: -15px;
+  width: 40px;
+  height: 40px;
 }
 .footerlogo {
 margin-top: -20px;
 text-align: center;
 padding-right: 45px;
-align-content: center;
+ align-content: center;
 }
 .ButlersPlumbingTextfooter {
   color: black;
@@ -445,8 +490,13 @@ align-content: center;
   color: white;
   border-color: #FFC533;
 }
+.mobilemiddle {
+  display: none;
 }
-
+.mobilefoot {
+  display: none;
+}
+}
 
 
 
