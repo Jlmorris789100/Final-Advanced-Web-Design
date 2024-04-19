@@ -1,4 +1,4 @@
- @media only screen and (max-width: 600px) {
+ @media only screen and (max-width: 768px) {
 .mobilenav {
   display: flex;
   flex-direction: row;
@@ -15,9 +15,9 @@
   font-style: normal;
 }
 .border {
-  margin-top: -38px;
+  margin-top: -15px;
   width: 100%;
-  height: 80px;
+  height: 60px;
 }
 .sidepanel {
   height: 100%; /* Specify a height */
@@ -53,18 +53,20 @@
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+  padding-right: 10px;
+  margin-top: -5px;
 }
 .openbtn {
-  font-size: 40px;
+  font-size: 30px;
   cursor: pointer;
   background-color: #000000;
   color: white;
   border: none;
+  margin-top: -5px;
 }
-.openbtn:active {
+.openbtn:hover {
   color: #FFC933;
 }
-
 #main {
   transition: margin-left .5s;
   padding: 16px;
@@ -135,9 +137,11 @@ justify-content: center;
   height: 100%;
   margin-top: 20px;
 }
-.mobilewaterimage {
-  width: 100%;
-  height: 500px;
+.mobileimage {
+margin-left: -10px;
+margin-right: -8px;
+height: auto;
+position: relative;
 }
 .header {
 display: none;
@@ -189,8 +193,7 @@ display: none;
 }
 }
 
-
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
 .mobilenav {
   display: none;
 }
@@ -214,8 +217,7 @@ display: none;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
-  width: 100%;
+  height: auto;
   background-color: #000000;
   margin-left: -10px;
   padding-right: 18px;
@@ -223,46 +225,55 @@ display: none;
   font-family: "Fira Sans", sans-serif;
   font-weight: 700;
   font-style: normal;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  flex-wrap: nowrap;
+  width: 100%;
 }
 .nav-logo {
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
-  row-gap: 10px;
 }
 .logo {
-  margin-left: 30px;
+  margin-left: 25px;
+  height: auto;
 }
 .butlersplumbingtext {
   color: #339494;
-  font-size: 24px;
+  font-size: 1.8vw;
   margin-left: 2px;
   margin-top: 35px;
 }
-.llctext {
+#llc {
   color: #339494;
-  font-size: 15px;
+  font-size: 1.1vw;
   margin-left: 8px;
   margin-top: 43px;
 }
 nav {
   display: flex;
   flex-direction: row;
-  margin-right: 20px;
+  align-content: center;
+  text-align: right;
+  justify-content: right;
+  margin-right: 15px;
+  height: auto;
+  flex-wrap: nowrap;
 }
 ul {
   list-style-type: none;
-
 }
 li {
   display: inline-flex;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 18px;
+  margin-right: 18px;
+  flex-wrap: nowrap;
 }
 li a {
   color: #FFFFFF;
   text-align: center;
   text-decoration: none;
-  font-size: 24px
+  font-size: 1.8vw;
 }
 li a:hover {
   color: #FFC533;
@@ -272,7 +283,7 @@ li a:hover {
   margin-left: -10px;
   margin-top: -3px;
   margin-right: -8px;
-  height: 500px;
+  height: 550px;
 }
 .waterimage {
   opacity: 0.7;
@@ -281,19 +292,18 @@ li a:hover {
   position: absolute;
   top: 150px;
   left: 25px;
-  font-size: 33px;
+  font-size: 2.5vw;
   color: black;
   font-family: "Fira Sans", sans-serif;
   font-weight: 700;
   font-style: normal;
 }
 .service {
+  width: 100%;
   margin-top: -130px;
-  padding-left: 100px;
-  padding-right: 100px;
 }
 h2 {
-   font-size: 33px;
+   font-size: 2.5vw;
    text-align: center;
    font-family: "Fira Sans", sans-serif;
    font-weight: 700;
@@ -303,11 +313,11 @@ h2 {
 }
 .text {
   width: 100%;
-  height: 100px;
+  height: auto;
   text-align: center;
   display: flex;
   justify-content: center;
-  font-size:  19px;
+  font-size:  1.3vw;
   font-family: "Cardo", serif;
   font-weight: 400;
   font-style: normal;
@@ -316,24 +326,27 @@ h2 {
 }
 .threeservices {
  width: 100%;
+ height: auto;
+ position: relative;
  display: flex;
- justify-content: space-around;
- margin-top: -30px;
+ justify-content: center;
+ align-content: center;
+flex-wrap: wrap;
 }
 .serviceimage {
   margin: 30px;
-  margin-bottom: -5px;
+  padding-bottom: 10px;
 }
 .bottom-left {
-  font-size:  19px;
+  font-size:  1.3vw;
   font-family: "Cardo", serif;
   font-weight: 700;
   font-style: normal;
   color: white;
   margin-top: -65px;
   margin-left: 18px;
-  diplasy: flex;
-  justify-conter: center;
+  display: flex;
+  justify-content: center;
 }
 .values {
   width: 100%;
@@ -345,12 +358,14 @@ h2 {
 }
 .fouricons {
  width: 100%;
+ position: relative;
  display: flex;
+ flex-wrap: wrap;
  justify-content: space-evenly;
  text-align: center;
 }
 p.icontext {
-  font-size: 24px;
+  font-size: 1.5vw;
   font-family: "Fira Sans", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -366,7 +381,7 @@ p.icontext {
   align-content: center;
 }
 p.lefttext {
-  font-size: 19px;
+  font-size:  1.3vw;
   padding-left: 100px;
   padding-right: 100px;
   font-family: "Cardo", serif;
@@ -375,27 +390,28 @@ p.lefttext {
   align-content: center;
 }
 .footercontainer {
-width: 100%;
 margin-top: 50px;
 border-top: 5px solid black;
 margin-bottom: 30px;
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-content: center;
 }
 .threecolumn {
- width: 100%;
- height: 200px;
  display: flex;
- justify-content: space-evenly;
- align-content: center;
  margin-top: 50px;
 }
 .contacttext {
-font-size: 19px;
+font-size:  1.3vw;
 line-height: 40px;
 text-align: left;
 margin-top: -40px;
 font-family: "Cardo", serif;
 font-weight: 400;
 font-style: normal;
+padding-left: 130px;
+padding-right: 130px;
 }
 .facebookimage {
 margin-bottom: -15px;
@@ -407,20 +423,29 @@ margin-top: -20px;
 text-align: center;
 padding-right: 45px;
 align-content: center;
+width: 100%;
+height: auto;
 }
 .ButlersPlumbingTextfooter {
   color: black;
-  font-size: 24px;
+  font-size: 1.8vw;
   font-family: "Fira Sans", sans-serif;
   font-weight: 700;
   font-style: normal;
 }
 #LLC {
   color: black;
-  font-size: 15px;
+  font-size: 1.1vw;
   font-family: "Fira Sans", sans-serif;
   font-weight: 700;
   font-style: normal;
+}
+.twobuttons {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+padding-left: 130px;
+padding-right: 130px;
 }
 .button {
   background-color: white;
@@ -433,8 +458,7 @@ align-content: center;
   padding-top: 15px;
   padding-bottom: 15px;
   text-align: center;
-  display: inline-block;
-  font-size: 19px;
+  font-size: 1.3vw;
   cursor: pointer;
   font-family: "Fira Sans", sans-serif;
   font-weight: 700;

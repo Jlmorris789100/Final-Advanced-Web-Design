@@ -15,9 +15,9 @@
   font-style: normal;
 }
 .border {
-  margin-top: -38px;
+  margin-top: -15px;
   width: 100%;
-  height: 80px;
+  height: 60px;
 }
 .sidepanel {
   height: 100%; /* Specify a height */
@@ -53,18 +53,20 @@
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+  padding-right: 10px;
+  margin-top: -5px;
 }
 .openbtn {
-  font-size: 40px;
+  font-size: 30px;
   cursor: pointer;
   background-color: #000000;
   color: white;
   border: none;
+  margin-top: -5px;
 }
-.openbtn:active {
+.openbtn:hover {
   color: #FFC933;
 }
-
 #main {
   transition: margin-left .5s;
   padding: 16px;

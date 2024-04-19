@@ -1,5 +1,303 @@
  @media only screen and (max-width: 600px) {
- }
+  .mobilenav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 82px;
+  width: 100%;
+  background-color: #000000;
+  margin-left: -10px;
+  padding-right: 18px;
+  margin-top: -10px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.border {
+  margin-top: -15px;
+  width: 100%;
+  height: 60px;
+}
+.sidepanel {
+  height: 100%; /* Specify a height */
+  width: 50%; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #000000; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 0px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+}
+.sidepanel a {
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-bottom: 40px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+.sidepanel a:hover {
+  color: #FFC933;
+}
+.sidepanel a:active {
+  color: #FFC933;
+}
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  padding-right: 10px;
+  margin-top: -5px;
+}
+.openbtn {
+  font-size: 30px;
+  cursor: pointer;
+  background-color: #000000;
+  color: white;
+  border: none;
+  margin-top: -5px;
+}
+.openbtn:hover {
+  color: #FFC933;
+}
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+.service {
+  display: none;
+}
+.nav-logo {
+  display: none;
+}
+nav {
+  display: none;
+}
+ul {
+ display: none;
+
+}
+li {
+  display: none;
+}
+.logo {
+display: flex;
+align-content: right;
+}
+.butlersplumbingtext {
+display: none;
+}
+.llcText {
+display: none;
+}
+.nav-container {
+display: none;
+}
+h2 {
+display: none;
+}
+.blacksection {
+display: none;
+}
+.personalinfo {
+display: none;
+}
+.tabcontainer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+button {
+  color: gray;
+  background-color: white;
+  border: none;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  font-size: 28px;
+  cursor: pointer;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-top: -100px;
+}
+button:hover {
+color: black;
+}
+button:active {
+color: black;
+}
+.tabcontent {
+  display: flex;
+  margin-top: 30px;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  font-size: 10px;
+  cursor: pointer;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.wrapper {
+justify-content: center;
+align-content: center;
+margin-bottom: 10px;
+margin-left: 50px;
+width: 100%;
+}
+form {
+  width: 90vw;
+  max-width: 20em;
+}
+button {
+  margin-top: 2rem;
+}
+input {
+ border-top: none;
+ border-left: none;
+ border-right: none;
+ border-bottom: 2px solid;
+padding: 0.3em;
+width: 100%;
+}
+textarea {
+  width: 100%;
+  min-height: 6em;
+  resize: vertical;
+}
+label {
+  display: block;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  width: 100%;
+}
+textarea {
+  width: 100%;
+  resize: vertical;
+}
+select {
+font-size: 13px;
+ border-top: none;
+ border-left: none;
+ border-right: none;
+ border-bottom: 2px solid;
+  padding: 0.3em;
+  width: 100%;
+}
+#date{
+  width: 80%;
+  height: 32px;
+}
+#city {
+  width: 80%;
+  height: 22px;
+}
+#services {
+ width: 80%;
+ height: 32px;
+}
+#time {
+ width: 80%;
+ height: 32px;
+}
+#name {
+ width: 80%;
+ height: 22px;
+}
+#street-address {
+width: 80%;
+height: 22px;
+}
+#postal-code {
+  width: 30%;
+  height: 22px;
+}
+#phone {
+width: 80%;
+height: 22px;
+}
+#email {
+width: 80%;
+height: 22px; 
+}
+#inquiry {
+width: 80%;
+height: 90px;
+border: 2px solid;
+}
+.submitandblue {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-content: center;
+width: 100%;
+margin-top: 30px;
+text-align: center;
+}
+button.submit {
+  text-align: center;
+  font-size: 19px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  background-color: white;
+  border-radius: 15px;
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  border-right: 1px solid;
+  border-left: 1px solid;
+  border-width: 3px;
+  color: black;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  padding-left: 35px;
+  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  cursor: pointer;
+  width: 30%;
+  margin-left: 160px;
+}
+button.submit:hover {
+  background-color: #FFC533; 
+  color: white;
+  border-color: #FFC533;
+}
+button.submit:after-click {
+  display: none;
+  content: url(images/checkmark-01.png);
+}
+.bluetext {
+background-color: #339494;
+border-radius: 30px;
+color: black;
+font-size:  17px;
+font-family: "Cardo", serif;
+font-weight: 400;
+height: 180px;
+text-align: center;
+align-content: center;
+padding-left: 50px;
+padding-right: 50px;
+width: 50%;
+margin-left: 70px;
+margin-bottom: 30px;
+}
+.footercontainer {
+display: none;
+}
+}
+
  @media only screen and (min-width: 600px) {
 .mobilenav {
   display: none;
@@ -71,6 +369,7 @@ h2 {
    font-weight: 700;
    font-style: normal;
    margin-bottom: 15px;
+   padding-top: 30px;
 }
 .blacksection {
   margin-top: -150px;
@@ -87,6 +386,7 @@ h2 {
   margin-top: 80px;
   justify-content: center;
   align-content: center;
+  padding-top: 30px;
 }
 .circleprofileimage {
   padding-right: 30px;
@@ -107,6 +407,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-content: center;
+  margin-top: -150px;
 }
 button {
   color: gray;
@@ -121,36 +422,38 @@ button {
   font-family: "Fira Sans", sans-serif;
   font-weight: 700;
   font-style: normal;
+  position: relative;
+  text-align: center;
 }
 button:hover {
 color: black;
 }
-button:active {
-  color: black;
+button:after-click {
+color: black;
 }
-.submit {
-  text-align: center;
-  display: inline-block;
-  font-size: 19px;
-  font-family: "Fira Sans", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  align-content: center;
-  width: 100%;
+#schedule {
+  margin-left: 10px;
 }
-/* Style the tab content */
 .tabcontent {
   display: flex;
   width: 100%;
+  height: 100%;
   justify-content: center;
   align-content: center;
+  font-size: 19px;
+  cursor: pointer;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-top: 30px;
 }
 .wrapper {
 display: flex;
 justify-content: center;
 align-content: center;
-padding-left: 170px;
 margin-bottom: 50px;
+width: 30%;
+margin-left: 100px;
 }
 form {
   width: 90vw;
@@ -160,13 +463,17 @@ button {
   margin-top: 2rem;
 }
 input {
-  border: 1px solid;
-  padding: 0.3em;
-  width: 100%;
+ border-top: none;
+ border-left: none;
+ border-right: none;
+ border-bottom: 2px solid;
+padding: 0.3em;
+width: 100%;
 }
 textarea {
   width: 100%;
   min-height: 6em;
+  resize: vertical;
 }
 label {
   display: block;
@@ -174,26 +481,90 @@ label {
   margin-top: 1rem;
   width: 100%;
 }
+textarea {
+  width: 100%;
+  resize: vertical;
+}
 select {
   font-size: 16px;
-  border: 1px solid;
+ border-top: none;
+ border-left: none;
+ border-right: none;
+ border-bottom: 2px solid;
   padding: 0.3em;
   width: 100%;
 }
-#postal-code {
-  width: 50%;
+#date{
+  width: 70%;
+  height: 32px;
 }
 #city {
-  width: 30%;
+  width: 70%;
+  height: 22px;
 }
-#street-address {
- width: 50%;
+#services {
+ width: 70%;
+ height: 32px;
 }
-#country {
- width: 50%;
+#time {
+ width: 70%;
+ height: 32px;
 }
 #name {
- width: 50%;
+ width: 70%;
+ height: 22px;
+}
+#street-address {
+width: 70%;
+height: 22px;
+}
+#postal-code {
+  width: 30%;
+  height: 22px;
+}
+#phone {
+width: 70%;
+height: 22px;
+}
+#email {
+width: 70%;
+height: 22px; 
+}
+#inquiry {
+width: 70%;
+height: 90px;
+border: 2px solid;
+}
+.submitandblue {
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-content: center;
+width: 100%;
+margin-top: 30px;
+text-align: center;
+}
+button.submit {
+  text-align: center;
+  font-size: 19px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  background-color: white;
+ text-decoration: underline;
+  color: black;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  cursor: pointer;
+  margin-right: 50px;
+  display: inline-block;
+}
+button.submit:hover {
+  color: #FFC533;
+  border-color: #FFC533;
+}
+button.submit:after-click {
+  content: url(images/checkmark-01.png);
 }
 .bluetext {
 background-color: #339494;
@@ -207,8 +578,8 @@ text-align: center;
 align-content: center;
 padding-left: 15px;
 padding-right: 15px;
-margin: auto;
 width: 30%;
+margin-left: 50px;
 }
 .footercontainer {
 width: 100%;
@@ -257,11 +628,10 @@ padding-right: 45px;
   font-weight: 700;
   font-style: normal;
 }
-.button {
+button.buttonfoot {
   background-color: white;
-  border-color: black;
   border-radius: 15px;
-  border-width: 3px;
+  border: 3px solid;
   color: black;
   padding-left: 30px;
   padding-right: 30px;
@@ -275,7 +645,7 @@ padding-right: 45px;
   font-weight: 700;
   font-style: normal;
 }
-.button:hover {
+button.buttonfoot:hover {
   background-color: #FFC533; 
   color: white;
   border-color: #FFC533;

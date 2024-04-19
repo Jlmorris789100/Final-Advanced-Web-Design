@@ -32,11 +32,11 @@
 	</script>
 
   	<div class="mobilelogo">
- 	<a href="index.html"><img src="images/logo-01.png" opacity=1 width=60px height=60px></a></div>
+ 	<a href="index.html"><img src="images/logo-01.png" opacity=1 width="60px" height="60px"></a></div>
 	</div>
 
 	<div class="border">
-	<img src="images/mobileborder.png" width=100% height=100%/>
+	<img src="images/mobileborder2.png" width=100% height=100%/>
 	</div>
 
 	<div class="nav-container">
@@ -66,8 +66,8 @@
 
 <div class="tabcontainer">
 <div class="w3-bar w3-black">
-  <button class="w3-bar-item w3-button" onclick="openCity('London')">Schedule a Service</button>
-  <button class="w3-bar-item w3-button" onclick="openCity('Paris')">Request an Estimate</button>
+  <button class="w3-bar-item w3-button" id="schedule" onclick="openCity('London')">Schedule a Service</button>
+  <button class="w3-bar-item w3-button" id="request" onclick="openCity('Paris')">Request an Estimate</button>
 </div>
 </div>
 	<script>
@@ -86,18 +86,25 @@ function openCity(cityName) {
   	<div class="wrapper">
     <form>
     <div>
-    <label for="street-address">Street address</label>
-    <input type="text" id="street-address" name="street-address" autocomplete="street-address" required enterkeyhint="next"></input>
+    <label for="name">Name</label>
+    <input required type="text" id="name" name="name" autocomplete="name" enterkeyhint="next">
     </div>
     <div>
-    <label for="postal-code">ZIP or postal code</label>
-    <input class="postal-code" id="postal-code" name="postal-code" autocomplete="postal-code" enterkeyhint="next">
-       <label for="city">City</label>
-    <input required type="text" id="city" name="city" autocomplete="address-level2" enterkeyhint="next">
-   </div>
+    <label for="street-address">Street Address</label>
+    <input type="text" id="street-address" name="street-address" autocomplete="street-address" required enterkeyhint="next"></input>
+	</div>
     <div>
-    <label for="country">Time</label>
-    <select id="country" name="country" autocomplete="country" enterkeyhint="done" required>
+    <label for="city">City</label>
+    <input required type="text" id="city" name="city" autocomplete="address-level2" enterkeyhint="next">
+    <label for="postal-code">Postal Code</label>
+    <input class="postal-code" id="postal-code" name="postal-code" autocomplete="postal-code" enterkeyhint="next">
+   </div>
+    </form>
+	</div>
+  	<form>
+   <div>
+    <label for="time">Time</label>
+    <select id="time" name="time" autocomplete="country" enterkeyhint="done" required>
     <option></option>
     <option>7:30 - 8:30 AM</option>
     <option>8:30 - 9:30 AM</option>
@@ -111,16 +118,9 @@ function openCity(cityName) {
     <option>4:30 - 5:30 PM</option>
     </select> 
     </div>
-    </form>
-	</div>
-  	 <form>
     <div>
-    <label for="name">Name</label>
-    <input required type="text" id="name" name="name" autocomplete="name" enterkeyhint="next">
-    </div>
-    <div>
-    <label for="street-address">Services</label>
-    <select id="country" name="country" autocomplete="country" enterkeyhint="done" required>
+    <label for="services">Services</label>
+    <select id="services" name="services" autocomplete="services" enterkeyhint="done" required>
 	<option></option>
     <option>Leak Repair</option>
     <option>Clogged Drain</option>
@@ -131,8 +131,8 @@ function openCity(cityName) {
     </select> 
     </div>
     <div>
-    <label for="postal-code">Date</label>
-    <select id="country" name="country" autocomplete="country" enterkeyhint="done" required>
+    <label for="date">Date</label>
+    <select id="date" name="date" autocomplete="date" enterkeyhint="done" required>
     <option></option>
     <option>Monday</option>
     <option>Tuesday</option>
@@ -145,9 +145,50 @@ function openCity(cityName) {
 </form>
 </div>
 </div>
-<div id="Paris" class="w3-container city" style="display:none">other buttons</div>
-<button class="submit" onclick="openCity('Paris')">Submit</button>
-	<div class="bluetext"> We are still active on Facebook, posting schedule openings, customer reviews, and even plumbing service promotions</div>
+
+	<div id="Paris" class="w3-container city">
+	<!-- Tab content -->
+	<div id="Paris" class="tabcontent">
+  	<div class="wrapper">
+    <form>
+    <div>
+    <label for="name">Name</label>
+    <input required type="text" id="name" name="name" autocomplete="name" enterkeyhint="next">
+    </div>
+    <div>
+    <label for="street-address">Street Address</label>
+    <input type="text" id="street-address" name="street-address" autocomplete="street-address" required enterkeyhint="next"></input>
+	</div>
+    <div>
+    <label for="city">City</label>
+    <input required type="text" id="city" name="city" autocomplete="address-level2" enterkeyhint="next">
+    <label for="postal-code">Postal Code</label>
+    <input class="postal-code" id="postal-code" name="postal-code" autocomplete="postal-code" enterkeyhint="next">
+   </div>
+    </form>
+	</div>
+  	<form>
+    <div>
+    <label for="phone">Phone</label>
+    <input class="phone" id="phone" name="phone" autocomplete="phone" enterkeyhint="next">
+    </div>
+    <div>
+   <label for="phone">Email</label>
+    <input class="email" id="email" name="email" autocomplete="email" enterkeyhint="next">
+    </div>
+    <div>
+    <label for="inquiry">Inquiry</label>
+    <textarea class="inquiry" id="inquiry" name="inquiry" autocomplete="inquiry" enterkeyhint="next" placeholder="Write something.."></textarea>
+   </div>
+	</div>
+</form>
+</div>
+</div>
+
+<div class="submitandblue">
+   <button class="submit" onclick="openCity('Paris')">Submit</button>
+   <div class="bluetext"> We are still active on Facebook, posting schedule openings, customer reviews, and even plumbing service promotions</div>
+</div>
 
 	<div class="footercontainer">
 	<div class="threecolumn">
@@ -158,8 +199,8 @@ function openCity(cityName) {
 	 <div class="butlersplumbingtextfooter">Butlers Plumbing <span id="llc">LLC</span></div>
 	</div>
 	<div class="twobuttons">
-	<a href="contact.html" ><button class="button">Schedule Service</button></a><br><br>
-	<a href="contact.html" ><button class="button">Request Estimate</button></a>
+	<a href="contact.html" ><button class="buttonfoot">Schedule Service</button></a><br><br>
+	<a href="contact.html" ><button class="buttonfoot">Request Estimate</button></a>
 	</div>
 	</div>
 	</div>
