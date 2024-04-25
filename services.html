@@ -43,6 +43,7 @@
 	<div class="slideshow-container">
 
   <!-- Full-width images with number and caption text -->
+  <div class="content">
   	<div class="mySlides fade">
   	<div class="numbertext">1 / 7</div>
   	<img class="slideimage" src="images/shower slide-01.png"width="300px" height="400px">
@@ -91,6 +92,7 @@
   	<div class="imagetext">New<br>Piping</div>
   	<div class="captiontext">Involves locating where piping needs to be placed, connecting all piping and testing water supply to each location.</div>
   	</div>
+  </div>
 
 
   <!-- Next and previous buttons -->
@@ -142,8 +144,7 @@
 	<div class="nav-container">
 	<div class="nav-logo">
 	<div class="logo"><img src="images/logo-01.png" opacity=1 width=60px  height=60px></div>
-	<div class="butlersplumbingtext">Butlers Plumbing</div>
-	<div class="llctext">LLC</div> 
+	<div class="butlersplumbingtext">Butlers Plumbing<span id="llc">LLC</span></div>
 	</div>
 
 	<nav>
@@ -158,12 +159,13 @@
 	</div>
 
 	<h2 class="offer"> What We Offer</h2>
+	<div class="container">
 	<button class="accordion">Shower Installation</button>
 	<div class="panel">
 	<div class="textprice">
 	<p>Involves installing shower arms, shower heads, handles and more. Some piping may need altered in the case of the modernized shower heads, arms and handles.</p>
     <div class="price">$50 - $140</div></div>
- 	<img src="images/showerinstall-01.png" width="700px" height="400px"/>
+ 	<img id="aimage" src="images/showerinstall-01.png" width="700px" height="400px"/>
 	</div>
 
 	<button class="accordion">Faucet Installation</button>
@@ -171,7 +173,7 @@
 	<div class="textprice">
 	<p>Involves building the new faucet and feeding tubes through the faucet hole. Connecting the faucet to the water supply, testing for leaks, and securing the faucet in place.</p>
  	<div class="price">$50 - $80</div></div>
- 	<img src="images/faucetinstall-01.png" width="700px" height="400px"/>
+ 	<img id="aimage" src="images/faucetinstall-01.png" width="700px" height="400px"/>
 	</div>
 
 	<button class="accordion">Water Heater Installation</button>
@@ -179,7 +181,7 @@
 	<div class="textprice">
 	<p>Involves scoping out the curcuit and locating water supply, mounting the heater, and then connecting the pipes. Installing valves, testing and then inspecting the electrical components.</p>
  	 <div class="price">$500 - $650</div></div>
- 	 <img src="images/waterheaterinstall.png" width="700px" height="400px"/>
+ 	 <img id="aimage" src="images/waterheaterinstall.png" width="700px" height="400px"/>
 	</div>
 
 	<button class="accordion">Leak Repair</button>
@@ -187,7 +189,7 @@
 	<div class="textprice">
 	<p>Involves finding the leak and determining the best way to fix the pipe. These could mean a whole new pipe or a simple patch.</p>
  	<div class="price">$70 - $100</div></div>
-  	<img src="images/leakrepair-01.png" width="700px" height="400px"/>
+  	<img id="aimage" src="images/leakrepair-01.png" width="700px" height="400px"/>
 	</div>
 
 	<button class="accordion">Clogged Drain</button>
@@ -195,7 +197,7 @@
 	<div class="textprice">
 	<p>Involves using several cleaning techniques. If these do not solve the issue, taking the drain cover off and using a drainpipe. In some cases, the pipes need to be taken off to clean.</p>
   	<div class="price">$40 - $75</div></div>
- 	 <img src="images/cloggeddrain-01.png" width="700px" height="400px"/>
+ 	 <img id="aimage" src="images/cloggeddrain-01.png" width="700px" height="400px"/>
 	</div>
 
 	<button class="accordion">Disposal Issue/Repair</button>
@@ -203,7 +205,7 @@
 	<div class="textprice">
 	<p>Involves running a test to see how the disposal is running, then taking apart the disposal to determine the problem. For installing a disposal, this involves placing new piping.</p>
   	<div class="price">$60 - $80</div></div>
-  	<img src="images/disposalissue-01.png" width="700px" height="400px"/>
+  	<img id="aimage" src="images/disposalissue-01.png" width="700px" height="400px"/>
 	</div>
 
 	<button class="accordion">New Construction</button>
@@ -211,18 +213,18 @@
 	<div class="textprice">
 	<p>Involves locating where piping needs to be placed, connecting all piping and testing water supply to each location.</p>
   	<div class="price">$350 - $400</div></div>
-	<img src="images/newconstruction-01.png" width="700px" height="400px"/>
+	<img id="aimage" src="images/newconstruction-01.png" width="700px" height="400px"/>
 	</div>
-
-	<div class="bottom">
+	</div>
+<div class="content">
 	<div class="cantfind">
 	<h2 class="find"> Can't Find What Your Need?</h2>
 	<p class="cant">You can contact us to see if we have the capabilities to fullfill your needed service.</p>
 	<div class="onebutton">
-	<a href="contact.html" ><button class="button">Contact Us</button></a>
+	<a href="contact.html" ><button class="buttoncant">Contact Us</button></a>
 	</div>
 	</div>
-	</div>
+</div>
 
 	<script>
 	var acc = document.getElementsByClassName("accordion");
@@ -244,12 +246,12 @@
 	<div class="contacttext">
 	<p> Follow us on Facebook <a href="https://www.facebook.com/profile.php?id=100088939752737"><img class="facebookimage" src="images/facebook logo-01.png" width="100%" height="100%"/></a><br>(610)-314-8578<br>butlersplumbingllc@gmail.com</p>
 	</div>
-	<div class="footerlogo"><img src="images/footerlogo-01.png" width="100%" height="100%"/>
+	<div class="footerlogo"><img src="images/footerlogo-01.png" width="150px" height="150px"/>
 	 <div class="ButlersPlumbingTextfooter">Butlers Plumbing <span id="LLC">LLC</span></div>
 	</div>
 	<div class="twobuttons">
-	<a href="contact.html" ><button class="button">Schedule Service</button></a><br><br>
-	<a href="contact.html" ><button class="button">Request Estimate</button></a>
+	<a href="contact.html#schedule" ><button class="button">Schedule Service</button></a><br><br>
+	<a href="contact.html#request" ><button class="button">Request Estimate</button></a>
 	</div>
 	</div>
 	</div>

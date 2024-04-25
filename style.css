@@ -138,8 +138,8 @@ justify-content: center;
   margin-top: 20px;
 }
 .mobileimage {
-margin-left: -10px;
-margin-right: -8px;
+margin-left: -7px;
+margin-right: -11px;
 height: auto;
 position: relative;
 }
@@ -324,6 +324,7 @@ h2 {
   line-height: 30px;
   padding-bottom: 20px;
 }
+@media only screen and (max-width: 1000px) {
 .threeservices {
  width: 100%;
  height: auto;
@@ -331,7 +332,49 @@ h2 {
  display: flex;
  justify-content: center;
  align-content: center;
-flex-wrap: wrap;
+}
+#simage {
+max-width: 200px;
+max-height: 270px;
+}
+.serviceimage {
+  justify-content: space-evenly;
+}
+.bottom-left {
+  font-size:  1.3vw;
+  text-align: left;
+  font-family: "Cardo", serif;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  margin-top: 10px;
+  margin-left: -70px;
+  justify-content: center;
+}
+.fouricons {
+ width: 100%;
+ position: relative;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-evenly;
+ text-align: center;
+}
+#icon {
+  width: 150px;
+  height: 150px;
+}
+}
+.threeservices {
+ width: 100%;
+ height: auto;
+ position: relative;
+ display: flex;
+ justify-content: center;
+ align-content: center;
+}
+#simage {
+width: 270px;
+height: 350px;
 }
 .serviceimage {
   margin: 30px;
@@ -344,10 +387,9 @@ flex-wrap: wrap;
   font-weight: 700;
   font-style: normal;
   color: white;
-  margin-top: -65px;
-  margin-left: -100px;
-  display: flex;
-  justify-content: center;
+  margin-top: -60px;
+  margin-left: 25px;
+  justify-content:  center;
 }
 .values {
   width: 100%;
@@ -356,6 +398,10 @@ flex-wrap: wrap;
   font-style: normal;
   margin-top: 100px;
   margin-bottom: 40px;
+}
+#icon {
+  max-width: 100%;
+  height: auto;
 }
 .fouricons {
  width: 100%;
@@ -407,7 +453,6 @@ margin-bottom: 30px;
 font-size:  1.3vw;
 line-height: 40px;
 text-align: left;
-margin-top: -40px;
 font-family: "Cardo", serif;
 font-weight: 400;
 font-style: normal;
@@ -416,8 +461,8 @@ padding-right: 130px;
 }
 .facebookimage {
 margin-bottom: -15px;
-width: 40px;
-height: 40px;
+max-width: 40px;
+max-height: 40px;
 }
 .footerlogo {
 margin-top: -20px;

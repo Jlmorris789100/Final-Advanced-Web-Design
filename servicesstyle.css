@@ -1,4 +1,4 @@
- @media only screen and (max-width: 600px) {
+ @media only screen and (max-width: 768px) {
 .mobilenav {
   display: flex;
   flex-direction: row;
@@ -113,6 +113,10 @@ h2.offer {
   margin: auto;
   margin-top: 30px;
 }
+.content {
+  display: flex;
+  justify-content: center;
+}
 /* Hide the images by default */
 .mySlides {
   display: none;
@@ -121,6 +125,7 @@ h2.offer {
 padding-left: 80px;
 padding-right: 80px;
 margin-bottom: 20px;
+align-content: center;
 }
 /* Next & previous buttons */
 .prev, .next {
@@ -209,10 +214,6 @@ margin-bottom: 20px;
   from {opacity: .4}
   to {opacity: 1}
 }
-.bottom {
-  display: flex;
-  justify-content: center;
-}
 .cantfind {
 width: 350px;
 height: 200px;
@@ -241,7 +242,7 @@ text-align: center;
 .onebutton {
 text-align: center;
 }
-.button {
+.buttoncant {
   background-color: white;
   border-color: black;
   border-radius: 15px;
@@ -259,7 +260,7 @@ text-align: center;
   font-weight: 700;
   font-style: normal;
 }
-.button:hover {
+.buttoncant:hover {
   background-color: #FFC533; 
   color: white;
   border-color: #FFC533;
@@ -293,7 +294,7 @@ display: none;
 }
 }
 
- @media only screen and (min-width: 600px) {
+ @media only screen and (min-width: 768px) {
 .mobilenav {
   display: none;
 }
@@ -317,8 +318,7 @@ display: none;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
-  width: 100%;
+  height: auto;
   background-color: #000000;
   margin-left: -10px;
   padding-right: 18px;
@@ -326,45 +326,55 @@ display: none;
   font-family: "Fira Sans", sans-serif;
   font-weight: 700;
   font-style: normal;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  flex-wrap: nowrap;
+  width: 100%;
 }
 .nav-logo {
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
-  row-gap: 10px;
 }
 .logo {
-  margin-left: 30px;
+  margin-left: 25px;
+  height: auto;
 }
 .butlersplumbingtext {
   color: #339494;
-  font-size: 24px;
+  font-size: 1.8vw;
   margin-left: 2px;
   margin-top: 35px;
 }
-.llctext {
+#llc {
   color: #339494;
-  font-size: 15px;
+  font-size: 1.1vw;
   margin-left: 8px;
   margin-top: 43px;
 }
 nav {
   display: flex;
   flex-direction: row;
-  margin-right: 20px;
+  align-content: center;
+  text-align: right;
+  justify-content: right;
+  margin-right: 15px;
+  height: auto;
+  flex-wrap: nowrap;
 }
 ul {
   list-style-type: none;
 }
 li {
   display: inline-flex;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 18px;
+  margin-right: 18px;
+  flex-wrap: nowrap;
 }
 li a {
   color: #FFFFFF;
   text-align: center;
   text-decoration: none;
-  font-size: 24px
+  font-size: 1.8vw;
 }
 li a:hover {
   color: #FFC533;
@@ -372,28 +382,31 @@ li a:hover {
 h2.offer {
  text-align: center;
  margin-top: 70px;
- font-size: 33px;
+ font-size: 2.5vw;
 font-family: "Fira Sans", sans-serif;
 font-weight: 700;
 }
 .slideshow-container {
   display: none;
 }
+.container {
+  width: 60%;
+}
 .accordion {
   background-color: black;
   color: white;
   cursor: pointer;
   padding: 20px;
-  width: 80%;
+  width: 100%;
   height: 80px;
   display: flex;
-  margin-left: 150px;
+  margin-left: 20vw;
   align-content: center;
   text-align: left;
   border: none;
   outline: none;
   transition: 0.4s;
-  font-size:  19px;
+  font-size:  1.5vw;
   font-family: "Cardo", serif;
   font-weight: 400;
 }
@@ -412,12 +425,12 @@ font-weight: 700;
 .panel {
   padding: 0 18px;
   background-color: white;
-  max-height: 0;
+  height: auto;
+   margin-left: 20vw;
   transition: max-height 0.2s ease-out;
   overflow: hidden;
-  width: 80%;
+  width: 100%;
   display: flex;
-  margin-left: 150px;
   align-content: center;
   text-align: left;
 }
@@ -435,28 +448,42 @@ margin-right: 30px;
   height: 30px;
   font-family: "Fira Sans", sans-serif;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 1.8vw;
   text-align: center;
   align-content: center;
   padding: 8px;
 }
 p {
   text-align: left;
-  font-size:  19px;
+  font-size:  1.5vw;
  font-family: "Cardo", serif;
  font-weight: 400;
 }
 .bottom {
   display: flex;
+  width: 100%
   justify-content: center;
+  align-content: center;
+  padding-left: 100px;
+}
+@media only screen and (max-width: 1000px) {
+ #aimage {
+ max-width: 250px;
+  height: auto;
+}
+}
+#aimage {
+ width: 400px;
+  height: auto;
 }
 .cantfind {
-width: 450px;
-height: 200px;
+width: 50%;
+height: auto;
 background-color: black;
 margin-bottom: -50px;
 padding: 30px;
-padding-bottom: 80px;
+margin-left: 22vw;
+padding-bottom: 50px;
 margin-top: 100px;
 border-radius: 15px 15px 0px 0px;
 align-content: center;
@@ -464,13 +491,14 @@ justify-content: center;
 }
 h2.find {
 color: #339494;
-font-size: 33px;
+font-size: 2.5vw;
 font-family: "Fira Sans", sans-serif;
 font-weight: 700;
+text-align: center;
 }
 p.cant {
 color: white;
-font-size:  19px;
+font-size:  1.5vw;
 font-family: "Cardo", serif;
 font-weight: 400;
 text-align: center;
@@ -478,19 +506,20 @@ text-align: center;
 .onebutton {
 text-align: center;
 }
-.button {
+.buttoncant {
   background-color: white;
   border-color: black;
   border-radius: 15px;
   border-width: 3px;
   color: black;
+  margin-top: 20px;
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 15px;
   padding-bottom: 15px;
   text-align: center;
   display: inline-block;
-  font-size: 19px;
+  font-size: 1.5vw;
   cursor: pointer;
   font-family: "Fira Sans", sans-serif;
   font-weight: 700;
@@ -502,51 +531,62 @@ text-align: center;
   border-color: #FFC533;
 }
 .footercontainer {
-width: 100%;
 margin-top: 50px;
 border-top: 5px solid black;
 margin-bottom: 30px;
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-content: center;
 }
 .threecolumn {
- width: 100%;
- height: 200px;
  display: flex;
- justify-content: space-evenly;
- align-content: center;
  margin-top: 50px;
 }
 .contacttext {
-font-size: 19px;
+font-size:  1.3vw;
 line-height: 40px;
- text-align: left;
+text-align: left;
+margin-top: 0px;
 font-family: "Cardo", serif;
 font-weight: 400;
 font-style: normal;
+padding-left: 130px;
+padding-right: 130px;
 }
 .facebookimage {
-  margin-bottom: -15px;
-  width: 40px;
-  height: 40px;
+margin-bottom: -15px;
+width: 40px;
+height: 40px;
 }
 .footerlogo {
 margin-top: -20px;
 text-align: center;
 padding-right: 45px;
- align-content: center;
+align-content: center;
+width: 100%;
+height: auto;
 }
 .ButlersPlumbingTextfooter {
   color: black;
-  font-size: 24px;
+  font-size: 1.8vw;
   font-family: "Fira Sans", sans-serif;
   font-weight: 700;
   font-style: normal;
 }
 #LLC {
   color: black;
-  font-size: 15px;
+  font-size: 1.1vw;
   font-family: "Fira Sans", sans-serif;
   font-weight: 700;
   font-style: normal;
+}
+.twobuttons {
+width: 100%;
+height: auto;
+display: inline-block;
+padding-left: 130px;
+padding-right: 130px;
 }
 .button {
   background-color: white;
@@ -559,8 +599,7 @@ padding-right: 45px;
   padding-top: 15px;
   padding-bottom: 15px;
   text-align: center;
-  display: inline-block;
-  font-size: 19px;
+  font-size: 1.3vw;
   cursor: pointer;
   font-family: "Fira Sans", sans-serif;
   font-weight: 700;

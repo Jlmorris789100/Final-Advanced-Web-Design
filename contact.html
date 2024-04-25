@@ -42,8 +42,7 @@
 	<div class="nav-container">
 	<div class="nav-logo">
 	<div class="logo"><img src="images/logo-01.png" opacity=1 width="60px"  height="60px"/></div>
-	<div class="butlersplumbingtext">Butlers Plumbing</div>
-	<div class="llctext">LLC</div> 
+	<div class="butlersplumbingtext">Butlers Plumbing<span id="llc">LLC</span></div>
 	</div>
 
 	<nav>
@@ -58,18 +57,21 @@
 	</div>
 
 	<h2>Contact Us</h2>
-	<div class="blacksection"><img src="images/full black section-01.png" role="presentation" width="100%" height="100%"/></div>
+	<div class="blacksection"><img id="blackimage" src="images/full black section-02.png" role="presentation" width="100%" height="350px"/>
 	<div class="personalinfo"> 
 	<div class="personaltext">I am a team of 1 but am willing to put it in the time to get your plumbing issues resolved. To make an appointment, enter your information below. If you are unsure if Butlers Plumbing LLC is the right plumbing service provider for you, request a free estimate. If we aren’t the right fit, thats okay, just as long as your plumbing issue gets fixed for the right price for you!</div>
-	<div class="circleprofileimage"><img src="images/circle joe profile-01.png" role="presentation" width="450px" height="450px"/></div>
+	<div class="joeimage"><img id="circleprofileimage" src="images/circle joe profile-01.png" role="presentation" width="800px" height="800px"/></div>
+	</div>
 	</div>
 
-<div class="tabcontainer">
-<div class="w3-bar w3-black">
-  <button class="w3-bar-item w3-button" id="schedule" onclick="openCity('London')">Schedule a Service</button>
-  <button class="w3-bar-item w3-button" id="request" onclick="openCity('Paris')">Request an Estimate</button>
-</div>
-</div>
+	<div class="directionsforcontactmobile">Select your contact need and enter your information</div>
+	<div class="directions">Select your contact need and enter your information</div>
+	<div class="tabcontainer">
+	<div class="w3-bar w3-black">
+    <button class="w3-bar-item w3-button" id="schedule" onclick="openCity('London')">Schedule a Service</button>
+    <button class="w3-bar-item w3-button" id="request" onclick="openCity('Paris')">Request an Estimate</button>
+	</div>
+	</div>
 	<script>
 function openCity(cityName) {
   var i;
@@ -98,11 +100,6 @@ function openCity(cityName) {
     <input required type="text" id="city" name="city" autocomplete="address-level2" enterkeyhint="next">
     <label for="postal-code">Postal Code</label>
     <input class="postal-code" id="postal-code" name="postal-code" autocomplete="postal-code" enterkeyhint="next">
-   </div>
-    </form>
-	</div>
-  	<form>
-   <div>
     <label for="time">Time</label>
     <select id="time" name="time" autocomplete="country" enterkeyhint="done" required>
     <option></option>
@@ -164,11 +161,6 @@ function openCity(cityName) {
     <input required type="text" id="city" name="city" autocomplete="address-level2" enterkeyhint="next">
     <label for="postal-code">Postal Code</label>
     <input class="postal-code" id="postal-code" name="postal-code" autocomplete="postal-code" enterkeyhint="next">
-   </div>
-    </form>
-	</div>
-  	<form>
-    <div>
     <label for="phone">Phone</label>
     <input class="phone" id="phone" name="phone" autocomplete="phone" enterkeyhint="next">
     </div>
@@ -186,7 +178,7 @@ function openCity(cityName) {
 </div>
 
 <div class="submitandblue">
-   <button class="submit" onclick="openCity('Paris')">Submit</button>
+   <button class="submit">Submit<span id="check">  ✔</span></button>
    <div class="bluetext"> We are still active on Facebook, posting schedule openings, customer reviews, and even plumbing service promotions</div>
 </div>
 
@@ -195,15 +187,14 @@ function openCity(cityName) {
 	<div class="contacttext">
 	<p> Follow us on Facebook <a href="https://www.facebook.com/profile.php?id=100088939752737"><img class="facebookimage" src="images/facebook logo-01.png" width="100%" height="100%"/></a><br>(610)-314-8578<br>butlersplumbingllc@gmail.com</p>
 	</div>
-	<div class="footerlogo"><img src="images/footerlogo-01.png" width="100%" height="100%"/>
-	 <div class="butlersplumbingtextfooter">Butlers Plumbing <span id="llc">LLC</span></div>
+	<div class="footerlogo"><img src="images/footerlogo-01.png" width="150px" height="150px"/>
+	 <div class="ButlersPlumbingTextfooter">Butlers Plumbing <span id="LLC">LLC</span></div>
 	</div>
 	<div class="twobuttons">
-	<a href="contact.html" ><button class="buttonfoot">Schedule Service</button></a><br><br>
-	<a href="contact.html" ><button class="buttonfoot">Request Estimate</button></a>
+	<a href="contact.html#schedule" ><button class="button">Schedule Service</button></a><br><br>
+	<a href="contact.html#request" ><button class="button">Request Estimate</button></a>
 	</div>
 	</div>
 	</div>
-
 <JS>
 </body>
