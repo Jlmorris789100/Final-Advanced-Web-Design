@@ -9,27 +9,26 @@
 <body>
 	<div class="mobilenav">
 	<div id="mySidebar" class="sidepanel">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><</a>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="services.html">Services</a>
     <a href="contact.html">Contact</a>
-    <a href="reviews.html">Reviews</a>
     </div>
 
 	<div id="main">
     <button class="openbtn" onclick="openNav()">☰</button>
 	</div>
 
-	<script>
-	function openNav() {
-    document.getElementById("mySidebar").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";}
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+}
 
-	function closeNav() {
-    document.getElementById("mySidebar").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";}
-	</script>
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+}
+</script>
 
   	<div class="mobilelogo">
  	<a href="index.html"><img src="images/logo-01.png" opacity=1 width=60px height=60px></a></div>
@@ -153,13 +152,11 @@
   	<li><a href="about.html">About</a></li>
   	<li><a href="services.html">Services</a></li>
   	<li><a href="contact.html">Contact</a></li>
-  	<li><a href="reviews.html">Reviews</a></li>
 	</ul>
 	</nav>
 	</div>
 
 	<h2 class="offer"> What We Offer</h2>
-	<div class="container">
 	<button class="accordion">Shower Installation</button>
 	<div class="panel">
 	<div class="textprice">
@@ -215,31 +212,44 @@
   	<div class="price">$350 - $400</div></div>
 	<img id="aimage" src="images/newconstruction-01.png" width="700px" height="400px"/>
 	</div>
-	</div>
+
 <div class="content">
 	<div class="cantfind">
-	<h2 class="find"> Can't Find What Your Need?</h2>
-	<p class="cant">You can contact us to see if we have the capabilities to fullfill your needed service.</p>
+	<h2 class="find"> Can't Find What You Need?</h2>
+	<p class="cant">You can contact us to see if we have the <br> capabilities to fullfill your needs.</p>
 	<div class="onebutton">
 	<a href="contact.html" ><button class="buttoncant">Contact Us</button></a>
 	</div>
 	</div>
-</div>
+	</div>
 
 	<script>
 	var acc = document.getElementsByClassName("accordion");
 	var i;
 	for (i = 0; i < acc.length; i++) {
- 	 acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
+ 	 acc[i].onclick = function() {
+    if( !this.classList.contains("active") ){closeAll();
+}
+this.classList.toggle("active");
     var panel = this.nextElementSibling;
     if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;} 
-      else {
-      panel.style.maxHeight = panel.scrollHeight + "px";} 
- 	});
-	}
-	</script>
+      panel.style.maxHeight = null;
+  } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+  } 
+ }
+}
+
+</script>
+
+<div class="mborder">
+	<img src="images/mobileborder2.png" width=100% height=100%></div>
+	<div class="mobilebottom">
+		<div class="twocolumn">
+			<a href="https://www.facebook.com/profile.php?id=100088939752737"><img id="mobilefacebookimage" src="images/facebook logo-01.png" width="100%" height="100%"/></a>
+			<p id="mobilecontact">butlersplumbingllc@gmail.com<br><br>(610)-314-8578</p>
+		</div>
+	</div>
 
 	<div class="footercontainer">
 	<div class="threecolumn">

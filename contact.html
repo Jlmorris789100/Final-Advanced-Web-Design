@@ -7,29 +7,28 @@
 	<link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Fira+Sans:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-	<div class="mobilenav">
+		<div class="mobilenav">
 	<div id="mySidebar" class="sidepanel">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><</a>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="services.html">Services</a>
     <a href="contact.html">Contact</a>
-    <a href="reviews.html">Reviews</a>
     </div>
 
 	<div id="main">
     <button class="openbtn" onclick="openNav()">☰</button>
 	</div>
 
-	<script>
-	function openNav() {
-    document.getElementById("mySidebar").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";}
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+}
 
-	function closeNav() {
-    document.getElementById("mySidebar").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";}
-	</script>
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+}
+</script>
 
   	<div class="mobilelogo">
  	<a href="index.html"><img src="images/logo-01.png" opacity=1 width="60px" height="60px"></a></div>
@@ -51,7 +50,6 @@
   	<li><a href="about.html">About</a></li>
   	<li><a href="services.html">Services</a></li>
   	<li><a href="contact.html">Contact</a></li>
-  	<li><a href="reviews.html">Reviews</a></li>
 	</ul>
 	</nav>
 	</div>
@@ -64,7 +62,6 @@
 	</div>
 	</div>
 
-	<div class="directionsforcontactmobile">Select your contact need and enter your information</div>
 	<div class="directions">Select your contact need and enter your information</div>
 	<div class="tabcontainer">
 	<div class="w3-bar w3-black">
@@ -178,9 +175,25 @@ function openCity(cityName) {
 </div>
 
 <div class="submitandblue">
-   <button class="submit">Submit<span id="check">  ✔</span></button>
+   <button onclick="myFunction()"class="submit">✔</button>
+   <p id="thank"></p>
    <div class="bluetext"> We are still active on Facebook, posting schedule openings, customer reviews, and even plumbing service promotions</div>
 </div>
+
+<div class="mborder">
+	<img src="images/mobileborder2.png" width=100% height=100%></div>
+	<div class="mobilebottom">
+		<div class="twocolumn">
+			<a href="https://www.facebook.com/profile.php?id=100088939752737"><img id="mobilefacebookimage" src="images/facebook logo-01.png" width="100%" height="100%"/></a>
+			<p id="mobilecontact">butlersplumbingllc@gmail.com<br><br>(610)-314-8578</p>
+		</div>
+	</div>
+
+	<script>
+function myFunction() {
+  document.getElementById("thank").innerHTML = "Thank you! <br>We will get back to you within 24 - 48 hours.";
+}
+</script>
 
 	<div class="footercontainer">
 	<div class="threecolumn">

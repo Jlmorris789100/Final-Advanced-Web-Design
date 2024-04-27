@@ -21,7 +21,7 @@
 }
 .sidepanel {
   height: 100%; /* Specify a height */
-  width: 50%; /* 0 width - change this with JavaScript */
+  width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
   top: 0;
@@ -44,9 +44,6 @@
 .sidepanel a:hover {
   color: #FFC933;
 }
-.sidepanel a:active {
-  color: #FFC933;
-}
 .sidepanel .closebtn {
   position: absolute;
   top: 0;
@@ -65,6 +62,9 @@
   margin-top: -5px;
 }
 .openbtn:hover {
+  color: #FFC933;
+}
+.openbtn:focus {
   color: #FFC933;
 }
 #main {
@@ -155,13 +155,13 @@ align-content: center;
 .imagetext {
   color: blue;
   position: absolute;
-  font-size: 15px;
+  font-size: 2.5vw;
   padding: 8px 12px;
   margin-top: -110px;
   margin-left: 90px;
   text-align: left;
   width: 200px; 
-  font-size: 22px;
+  font-size: 3.6vw;
   color: white;
   font-family: "Fira Sans", sans-serif;
   font-weight: 700;
@@ -171,11 +171,11 @@ align-content: center;
   color: black;
   width: 350px;
   position: absolute;
-  font-size: 15px;
+  font-size: 2.5vw;
   padding: 10px 12px;
   text-align: center;
   margin-left: 45px;
-  font-size:  17px;
+  font-size:  2.5vw;
   font-family: "Cardo", serif;
   font-weight: 400;
   font-style: normal;
@@ -184,7 +184,7 @@ align-content: center;
 /* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
-  font-size: 12px;
+  font-size: 2.5vw;
   padding: 8px 12px;
   position: absolute;
   top: 0;
@@ -215,28 +215,29 @@ align-content: center;
   to {opacity: 1}
 }
 .cantfind {
-width: 350px;
+width: 100%;
 height: 200px;
-background-color: black;
-margin-bottom: -10px;
 padding: 30px;
 padding-bottom: 90px;
-margin-top: 100px;
+margin-top: 50px;
 border-radius: 15px 15px 0px 0px;
 align-content: center;
 justify-content: center;
 }
 h2.find {
-color: #339494;
-font-size: 28px;
+color: black;
+text-align: center;
+font-size: 5vw;
 font-family: "Fira Sans", sans-serif;
 font-weight: 700;
 }
 p.cant {
-color: white;
-font-size:  17px;
+color: black;
+font-size:  2.5vw;
 font-family: "Cardo", serif;
 font-weight: 400;
+margin-top: -10px;
+margin-bottom: 30px;
 text-align: center;
 }
 .onebutton {
@@ -254,7 +255,7 @@ text-align: center;
   padding-bottom: 15px;
   text-align: center;
   display: inline-block;
-  font-size: 19px;
+  font-size: 2.5vw;
   cursor: pointer;
   font-family: "Fira Sans", sans-serif;
   font-weight: 700;
@@ -268,7 +269,6 @@ text-align: center;
 .footercontainer {
 display: none;
 }
-
 .button {
   background-color: white;
   border-color: black;
@@ -281,7 +281,7 @@ display: none;
   padding-bottom: 15px;
   text-align: center;
   display: inline-block;
-  font-size: 19px;
+  font-size: 2.5vw;
   cursor: pointer;
   font-family: "Fira Sans", sans-serif;
   font-weight: 700;
@@ -292,7 +292,48 @@ display: none;
   color: white;
   border-color: #FFC533;
 }
+.mborder {
+  margin-top: -40px;
+  width: 100%;
+  height: 60px;
+  transform: rotate(180deg)
 }
+.mobilebottom {
+ display: flex;
+ position: relative;
+ flex-direction: row;
+ justify-content: space-between;
+ align-content: center;
+ background-color: black;
+ margin-top: -20px;
+ height: 170px;
+ width: 100%;
+margin-left: -10px;
+padding-right: 20px;
+margin-bottom: -10px;
+margin-top: -15px;
+}
+.twocolumn {
+ display: inline-flex;
+flex-direction: row;
+ margin-top: 35px;
+ width: 100%;
+ justify-content: space-evenly;
+ align-content: center;
+}
+#mobilecontact {
+  color: white;
+  font-style: normal;
+  font-size:  2.5vw;
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  text-align: center;
+}
+#mobilefacebookimage {
+  max-width: 60px;
+  height: auto;
+  margin-top: 15px;
+}}
 
  @media only screen and (min-width: 768px) {
 .mobilenav {
@@ -313,6 +354,12 @@ display: none;
 .mobiletwobuttons {
   display: none;
 }
+.mobilebottom {
+display: none;
+}
+.mborder {
+display: none;
+  }
 .nav-container {
   display: flex;
   flex-direction: row;
@@ -381,27 +428,23 @@ li a:hover {
 }
 h2.offer {
  text-align: center;
- margin-top: 70px;
  font-size: 2.5vw;
 font-family: "Fira Sans", sans-serif;
 font-weight: 700;
+margin-bottom: 45px;
+padding-top: 30px;
 }
 .slideshow-container {
   display: none;
 }
-.container {
-  width: 60%;
-}
-.accordion {
+button.accordion {
   background-color: black;
   color: white;
   cursor: pointer;
   padding: 20px;
-  width: 100%;
+  width: 60%;
   height: 80px;
-  display: flex;
-  margin-left: 20vw;
-  align-content: center;
+  margin-left: 19vw;
   text-align: left;
   border: none;
   outline: none;
@@ -410,13 +453,14 @@ font-weight: 700;
   font-family: "Cardo", serif;
   font-weight: 400;
 }
-.accordion:after {
+button.accordion:after {
   content: '\02795'; /* Unicode character for "plus" sign (+) */
   font-size: 15px;
   padding-left: 30px;
   color: white;
+  float: right;
 }
-.active:after {
+button.accordion.active:after {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
   font-size: 15px;
   color: white;
@@ -426,13 +470,11 @@ font-weight: 700;
   padding: 0 18px;
   background-color: white;
   height: auto;
-   margin-left: 20vw;
+  margin-left: 18vw;
   transition: max-height 0.2s ease-out;
   overflow: hidden;
-  width: 100%;
-  display: flex;
-  align-content: center;
-  text-align: left;
+  display: inline-flex;
+  width: 60%;
 }
 .textprice {
 diplay: flex;
@@ -542,6 +584,7 @@ margin-bottom: 30px;
 .threecolumn {
  display: flex;
  margin-top: 50px;
+ justify-content: space-evenly;
 }
 .contacttext {
 font-size:  1.3vw;
@@ -573,6 +616,7 @@ height: auto;
   font-family: "Fira Sans", sans-serif;
   font-weight: 700;
   font-style: normal;
+  width: 250px;
 }
 #LLC {
   color: black;
