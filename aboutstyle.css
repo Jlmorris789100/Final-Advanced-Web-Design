@@ -227,7 +227,7 @@ padding-left: 10px;
  justify-content: space-between;
  align-content: center;
  background-color: black;
- height: 170px;
+ height: 150px;
  width: 100%;
 margin-left: -10px;
 padding-right: 20px;
@@ -470,6 +470,17 @@ margin-top: 30px;
   font-family: "Cardo", serif;
   font-weight: 400;
   font-style: normal;
+}
+figcaption {
+  color: black;
+  padding: 2px;
+  text-align: center;
+  font-size:  0.9vw;
+  font-family: "Cardo", serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-top: -0.7vw;
+  margin-bottom: 1vw;
 }
 h2.Experience{
   display: flex;
